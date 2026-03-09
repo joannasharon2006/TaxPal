@@ -7,7 +7,7 @@ const getAuthHeaders = () => ({
 
 export const addIncome = async (data) => {
   const res = await axios.post(
-    "http://localhost:5001/api/income",
+    "https://taxpal-7erx.onrender.com/api/income",
     data,
     { headers: getAuthHeaders() }
   );
@@ -16,7 +16,7 @@ export const addIncome = async (data) => {
 
 export const addExpense = async (data) => {
   const res = await axios.post(
-    "http://localhost:5001/api/expense",
+    "https://taxpal-7erx.onrender.com/api/expense",
     data,
     { headers: getAuthHeaders() }
   );

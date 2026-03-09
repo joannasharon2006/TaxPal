@@ -3,7 +3,7 @@ import { getToken } from "../utils/auth";
 
 export const downloadReport = async ({ type, month, year }) => {
   const res = await axios.get(
-    `http://localhost:5001/api/reports?type=${type}&month=${month}&year=${year}`,
+    `https://taxpal-7erx.onrender.com/api/reports?type=${type}&month=${month}&year=${year}`,
     {
       responseType: "blob",
       headers: {
