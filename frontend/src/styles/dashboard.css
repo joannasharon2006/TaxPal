@@ -1,0 +1,157 @@
+/* ================= DASHBOARD CONTAINER ================= */
+
+.dashboard-container {
+  padding: 60px 50px;
+  color: white;
+}
+
+
+/* ================= SUMMARY CARDS ================= */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* ================= FORMS ================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  padding: 35px;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-card h3 {
+  margin-bottom: 20px;
+}
+
+
+/* ================= INPUTS ================= */
+
+.form-card input,
+.form-card select {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 12px;
+
+  border-radius: 6px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.9);
+  color: #1e3c72;
+}
+
+
+/* ================= BUTTON ================= */
+
+.form-card button {
+  width: 40%;
+  padding: 10px;
+
+  border-radius: 6px;
+  border: none;
+
+  background: white;
+  color: #1e3c72;
+  font-weight: bold;
+
+  cursor: pointer;
+  margin-top: 10px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+
+/* ================= CHARTS ================= */
+
+.chart-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.chart-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+
+  padding: 35px;
+  border-radius: 18px;
+}
+
+.chart-card h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* ================= LOADING ================= */
+
+.loading {
+  color: white;
+  padding: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .dashboard-container {
+    padding: 40px 20px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

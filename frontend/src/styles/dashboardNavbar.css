@@ -1,0 +1,63 @@
+.dashboard-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 72px;
+  background: rgba(15, 30, 60, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashboard-nav-inner {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-logo img {
+  height: 83px;   /* ⬅️ bigger, but still clean */
+  width: auto;
+  object-fit: contain;
+  margin-left: -135px;
+}
+
+/* Actions */
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  margin-right: -120px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

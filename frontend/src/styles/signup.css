@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  width: 350px;
+  border-radius: 16px 0 0 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.auth-card h2 {
+  text-align: center;
+  font-family: "Manrope", system-ui, sans-serif;
+  margin-bottom: 20px;
+}
+
+.auth-card input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.auth-card button {
+  width: 70%;
+  padding: 10px;
+  margin-top: 15px;
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 48px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.auth-card button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+}
+
+.auth-card p {
+  text-align: center;
+  font-size: small;
+  margin-top: 16px;
+  margin-left: -6px;
+  font-family: "Manrope", system-ui, sans-serif;
+}
+.auth-card p a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-card p a:hover {
+  text-decoration: underline;
+}
+.dashboard {
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Wrapper for form + animation */
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Animation container background */
+.auth-animation {
+  width: 330px;
+  height: 451.4px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0 16px 16px 0;
+  border-left: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+/* Hide animation on small screens */
+@media (max-width: 768px) {
+  .auth-animation {
+    display: none;
+  }
+}
